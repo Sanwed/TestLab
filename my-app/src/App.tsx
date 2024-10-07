@@ -9,7 +9,9 @@ const router = createBrowserRouter([
     path: '/',
     element: <Home />
   }
-])
+], {
+  basename: '/TestLab'
+})
 
 function App() {
   return (
