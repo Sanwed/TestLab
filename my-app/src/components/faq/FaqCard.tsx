@@ -7,7 +7,7 @@ import classNames from "classnames";
 function FaqCard({title, description, isHidden, order}: FaqCardType) {
   const dispatch = useAppDispatch();
 
-  const handleClick = useCallback(() => dispatch(toggleHidden(order as number - 1)), [dispatch])
+  const handleClick = useCallback(() => dispatch(toggleHidden(order as number - 1)), [order, dispatch])
 
   return (
     <div className='border-extra-light-gray border-t-2'>

@@ -29,7 +29,7 @@ function Slider({slidesToShow, slidesData}: { slidesToShow: number, slidesData: 
 
   useEffect(() => {
     dispatch(setVisibleSlides(slidesToShow));
-  }, [slides]);
+  }, [slides, dispatch, slidesToShow]);
 
   const handleNextSlide = () => dispatch(nextSlide());
   const handlePrevSlide = () => dispatch(prevSlide());
